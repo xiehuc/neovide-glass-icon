@@ -15,6 +15,18 @@ The preview is converted from the included `neovide.icns`, preserving its transp
 - `preview.png`: Preview image used in this README.
 - `build.sh`: Build script.
 
+## Usage
+
+Download [neovide.icns](neovide.icns) and save it to a permanent location.
+
+Add the following top-level setting to `$HOME/.config/neovide/config.toml` (before any TOML section headers), replacing the placeholder with the absolute path to the downloaded file:
+
+```toml
+icon = "<path to>/neovide.icns"
+```
+
+If an `icon` setting already exists, update it instead of adding a duplicate. Restart Neovide to apply the icon.
+
 ## Build
 
 Requires macOS and a full Xcode installation that supports the source `.icon` format. Complete Xcode’s first-launch setup and accept its license agreement before building. Command Line Tools alone are not sufficient.
